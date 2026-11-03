@@ -1,0 +1,11 @@
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\bin\Debug\net8.0\ArtOfDesign.Domain.deps.json
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\bin\Debug\net8.0\ArtOfDesign.Domain.dll
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\bin\Debug\net8.0\ArtOfDesign.Domain.pdb
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\ArtOfDesign.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\ArtOfDesign.Domain.AssemblyInfoInputs.cache
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\ArtOfDesign.Domain.AssemblyInfo.cs
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\ArtOfDesign.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\ArtOfDesign.Domain.dll
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\refint\ArtOfDesign.Domain.dll
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\ArtOfDesign.Domain.pdb
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\ref\ArtOfDesign.Domain.dll

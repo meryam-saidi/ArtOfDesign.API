@@ -1,0 +1,6 @@
+@ArtOfDesign.API_HostAddress = http://localhost:5133
+
+GET {{ArtOfDesign.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
