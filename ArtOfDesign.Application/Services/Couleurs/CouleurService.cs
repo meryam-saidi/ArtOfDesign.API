@@ -8,10 +8,12 @@ namespace ArtOfDesign.Application.Services.Couleurs;
 public class CouleurService : ICouleurService
 {
     private readonly ICouleurRepository _repository;
+    private readonly IImageStorageService _imageStorageService;
 
-    public CouleurService(ICouleurRepository repository)
+    public CouleurService(ICouleurRepository repository, IImageStorageService imageStorageService)
     {
         _repository = repository;
+        _imageStorageService = imageStorageService;
     }
 
     public async Task<List<CouleurDto>> GetAllAsync()
@@ -43,17 +45,27 @@ public class CouleurService : ICouleurService
         };
     }
 
-    public async Task<CouleurDto> CreateAsync(CreateCouleurDto dto)
+    public async Task<CouleurDto> CreateAsync(CreateCouleurDto dto, Stream imageStream, string fileName)
     {
+        // 1. Téléverser l'image sur Cloudinary
+        var uploadResult = await _imageStorageService.UploadImageAsync(
+            imageStream,
+            fileName
+        );
+
+        // 2. Créer l'entité Couleur
         var couleur = new Couleur
         {
             Nom = dto.Nom,
+            PublicId = uploadResult.PublicId,
             CodeCouleur = dto.CodeCouleur,
-            ImagePresentationUrl = dto.ImagePresentationUrl
+            ImagePresentationUrl = uploadResult.Url
         };
 
+        // 3. Enregistrer la couleur en base de données
         await _repository.AddAsync(couleur);
 
+        // 4. Retourner le DTO
         return new CouleurDto
         {
             Id = couleur.Id,
@@ -63,7 +75,11 @@ public class CouleurService : ICouleurService
         };
     }
 
-    public async Task<CouleurDto?> UpdateAsync(int id, CouleurDto dto)
+    public async Task<CouleurDto?> UpdateAsync(
+    int id,
+    UpdateCouleurDto dto,
+    Stream? imageStream,
+    string? fileName)
     {
         var couleur = await _repository.GetByIdAsync(id);
 
@@ -72,7 +88,20 @@ public class CouleurService : ICouleurService
 
         couleur.Nom = dto.Nom;
         couleur.CodeCouleur = dto.CodeCouleur;
-        couleur.ImagePresentationUrl = dto.ImagePresentationUrl;
+
+        if (imageStream != null && !string.IsNullOrEmpty(fileName))
+        {
+            if (!string.IsNullOrEmpty(couleur.PublicId))
+                await _imageStorageService.DeleteImageAsync(couleur.PublicId);
+
+            var uploadResult = await _imageStorageService.UploadImageAsync(
+                imageStream,
+                fileName
+            );
+
+            couleur.ImagePresentationUrl = uploadResult.Url;
+            couleur.PublicId = uploadResult.PublicId;
+        }
 
         await _repository.UpdateAsync(couleur);
 
@@ -83,5 +112,24 @@ public class CouleurService : ICouleurService
             CodeCouleur = couleur.CodeCouleur,
             ImagePresentationUrl = couleur.ImagePresentationUrl
         };
+    }
+
+    public async Task<bool> DeleteAsync(int id)
+    {
+        var couleur = await _repository.GetByIdAsync(id);
+
+        if (couleur is null)
+            return false;
+
+        // Supprimer l'image de Cloudinary
+        if (!string.IsNullOrEmpty(couleur.PublicId))
+        {
+            await _imageStorageService.DeleteImageAsync(couleur.PublicId);
+        }
+
+        // Supprimer la couleur de la base de données
+        await _repository.DeleteAsync(couleur);
+
+        return true;
     }
 }

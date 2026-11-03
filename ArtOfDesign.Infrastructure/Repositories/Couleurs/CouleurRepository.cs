@@ -39,4 +39,10 @@ public class CouleurRepository : ICouleurRepository
         _context.Couleurs.Update(couleur);
         await _context.SaveChangesAsync();
     }
+
+    public async Task DeleteAsync(Couleur couleur)
+    {
+        _context.Couleurs.Remove(couleur);
+        await _context.SaveChangesAsync();
+    }
 }

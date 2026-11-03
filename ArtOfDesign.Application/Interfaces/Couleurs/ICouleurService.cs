@@ -8,7 +8,16 @@ public interface ICouleurService
 
     Task<CouleurDto?> GetByIdAsync(int id);
 
-    Task<CouleurDto> CreateAsync(CreateCouleurDto dto);
+    Task<CouleurDto> CreateAsync(
+        CreateCouleurDto dto, 
+        Stream imageStream, 
+        string fileName);
 
-    Task<CouleurDto?> UpdateAsync(int id, CouleurDto dto);
+    Task<CouleurDto?> UpdateAsync(
+        int id, 
+        UpdateCouleurDto dto,
+        Stream? imageStream,
+        string? fileName);
+
+    Task<bool> DeleteAsync(int id);
 }

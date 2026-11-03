@@ -11,4 +11,6 @@ public interface ICouleurRepository
     Task AddAsync(Couleur couleur);
 
     Task UpdateAsync(Couleur couleur);
+
+    Task DeleteAsync(Couleur couleur);
 }

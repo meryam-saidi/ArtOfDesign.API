@@ -9,3 +9,4 @@ C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debu
 C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\refint\ArtOfDesign.Domain.dll
 C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\ArtOfDesign.Domain.pdb
 C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\ref\ArtOfDesign.Domain.dll
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Domain\obj\Debug\net8.0\ArtOfDesign.Domain.sourcelink.json

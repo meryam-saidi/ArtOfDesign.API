@@ -17,3 +17,4 @@ C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Infrastructure\
 C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Infrastructure\obj\Debug\net8.0\ArtOfDesign.Infrastructure.pdb
 C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Infrastructure\obj\Debug\net8.0\ArtOfDesign.Infrastructure.genruntimeconfig.cache
 C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Infrastructure\obj\Debug\net8.0\ref\ArtOfDesign.Infrastructure.dll
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Infrastructure\obj\Debug\net8.0\ArtOfDesign.Infrastructure.sourcelink.json

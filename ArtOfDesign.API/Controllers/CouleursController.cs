@@ -1,5 +1,7 @@
-﻿using ArtOfDesign.Application.DTOs.Couleurs;
+﻿using ArtOfDesign.API.Extensions;
+using ArtOfDesign.Application.DTOs.Couleurs;
 using ArtOfDesign.Application.Interfaces.Couleurs;
+using ArtOfDesign.Application.Services.Couleurs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArtOfDesign.API.Controllers;
@@ -34,27 +36,68 @@ public class CouleursController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<CouleurDto>> Create(
-        [FromBody] CreateCouleurDto dto)
+    [Consumes("multipart/form-data")]
+    public async Task<IActionResult> Create([FromForm] CreateCouleurForm form)
     {
-        var couleur = await _service.CreateAsync(dto);
+        if (form.Image == null || form.Image.Length == 0)
+            return BadRequest(new { message = "Une image est obligatoire." });
+
+        using var stream = form.Image.OpenReadStream();
+
+        var dto = new CreateCouleurDto
+        {
+            Nom = form.Nom,
+            CodeCouleur = form.CodeCouleur
+        };
+
+        var couleur = await _service.CreateAsync(
+            dto,
+            stream,
+            form.Image.FileName
+        );
 
         return CreatedAtAction(
             nameof(GetById),
             new { id = couleur.Id },
-            couleur);
+            couleur
+        );
     }
 
     [HttpPut("{id:int}")]
+    [Consumes("multipart/form-data")]
     public async Task<ActionResult<CouleurDto>> Update(
-        int id,
-        [FromBody] CouleurDto dto)
+    int id,
+    [FromForm] UpdateCouleurForm form)
     {
-        var couleur = await _service.UpdateAsync(id, dto);
+        using var stream = form.Image?.OpenReadStream();
+
+        var dto = new UpdateCouleurDto
+        {
+            Nom = form.Nom,
+            CodeCouleur = form.CodeCouleur
+        };
+
+        var couleur = await _service.UpdateAsync(
+            id,
+            dto,
+            stream,
+            form.Image?.FileName
+        );
 
         if (couleur is null)
             return NotFound();
 
         return Ok(couleur);
+    }
+
+    [HttpDelete("{id:int}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var deleted = await _service.DeleteAsync(id);
+
+        if (!deleted)
+            return NotFound();
+
+        return NoContent();
     }
 }

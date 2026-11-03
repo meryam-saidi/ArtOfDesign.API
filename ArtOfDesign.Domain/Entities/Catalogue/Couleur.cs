@@ -9,4 +9,6 @@ public class Couleur
     public string CodeCouleur { get; set; } = string.Empty;
 
     public string ImagePresentationUrl { get; set; } = string.Empty;
+
+    public string PublicId { get; set; } = string.Empty;
 }

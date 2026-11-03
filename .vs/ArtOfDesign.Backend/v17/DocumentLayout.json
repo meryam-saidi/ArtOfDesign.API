@@ -3,50 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.api\\controllers\\cuisinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|solutionrelative:artofdesign.api\\controllers\\cuisinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.api\\controllers\\couleurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|solutionrelative:artofdesign.api\\controllers\\couleurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.application\\services\\cuisines\\cuisineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|solutionrelative:artofdesign.application\\services\\cuisines\\cuisineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.application\\interfaces\\cuisines\\icuisineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|solutionrelative:artofdesign.application\\interfaces\\cuisines\\icuisineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\repositories\\cuisines\\cuisinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\repositories\\cuisines\\cuisinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.application\\interfaces\\cuisines\\icuisinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|solutionrelative:artofdesign.application\\interfaces\\cuisines\\icuisinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.application\\dtos\\images\\imageuploadresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|solutionrelative:artofdesign.application\\dtos\\images\\imageuploadresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.application\\interfaces\\iimagestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|solutionrelative:artofdesign.application\\interfaces\\iimagestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.application\\services\\couleurs\\couleurservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|solutionrelative:artofdesign.application\\services\\couleurs\\couleurservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "DockedHeight": 496,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,117 +38,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
-              "RelativeToolTip": "ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA1wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T09:24:19.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CuisineRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Repositories\\Cuisines\\CuisineRepository.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Infrastructure\\Repositories\\Cuisines\\CuisineRepository.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Repositories\\Cuisines\\CuisineRepository.cs",
-              "RelativeToolTip": "ArtOfDesign.Infrastructure\\Repositories\\Cuisines\\CuisineRepository.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAwwDgAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T09:18:26.604Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CuisinesController.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Controllers\\CuisinesController.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.API\\Controllers\\CuisinesController.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Controllers\\CuisinesController.cs",
-              "RelativeToolTip": "ArtOfDesign.API\\Controllers\\CuisinesController.cs",
-              "ViewState": "AQIAAL0AAAAAAAAAAAAowMQAAAAtAAAA",
+              "Title": "CouleursController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Controllers\\CouleursController.cs",
+              "RelativeDocumentMoniker": "ArtOfDesign.API\\Controllers\\CouleursController.cs",
+              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Controllers\\CouleursController.cs",
+              "RelativeToolTip": "ArtOfDesign.API\\Controllers\\CouleursController.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAcwGUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T09:16:43.44Z",
+              "WhenOpened": "2026-11-03T15:29:29.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ICuisineRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Interfaces\\Cuisines\\ICuisineRepository.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Application\\Interfaces\\Cuisines\\ICuisineRepository.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Interfaces\\Cuisines\\ICuisineRepository.cs",
-              "RelativeToolTip": "ArtOfDesign.Application\\Interfaces\\Cuisines\\ICuisineRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T09:16:16.09Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ICuisineService.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Interfaces\\Cuisines\\ICuisineService.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Application\\Interfaces\\Cuisines\\ICuisineService.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Interfaces\\Cuisines\\ICuisineService.cs",
-              "RelativeToolTip": "ArtOfDesign.Application\\Interfaces\\Cuisines\\ICuisineService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T09:16:10.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IImageStorageService.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Interfaces\\IImageStorageService.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Application\\Interfaces\\IImageStorageService.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Interfaces\\IImageStorageService.cs",
-              "RelativeToolTip": "ArtOfDesign.Application\\Interfaces\\IImageStorageService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T07:48:27.495Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ImageUploadResult.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\DTOs\\Images\\ImageUploadResult.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Application\\DTOs\\Images\\ImageUploadResult.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\DTOs\\Images\\ImageUploadResult.cs",
-              "RelativeToolTip": "ArtOfDesign.Application\\DTOs\\Images\\ImageUploadResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T07:51:14.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CloudinaryService.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Services\\CloudinaryService.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Infrastructure\\Services\\CloudinaryService.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Services\\CloudinaryService.cs",
-              "RelativeToolTip": "ArtOfDesign.Infrastructure\\Services\\CloudinaryService.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowCIAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T07:32:33.198Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CuisineService.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Services\\Cuisines\\CuisineService.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Application\\Services\\Cuisines\\CuisineService.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Services\\Cuisines\\CuisineService.cs",
-              "RelativeToolTip": "ArtOfDesign.Application\\Services\\Cuisines\\CuisineService.cs",
-              "ViewState": "AQIAAE0BAAAAAAAAAAAgwFMBAAA4AAAA",
+              "Title": "CouleurService.cs",
+              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Services\\Couleurs\\CouleurService.cs",
+              "RelativeDocumentMoniker": "ArtOfDesign.Application\\Services\\Couleurs\\CouleurService.cs",
+              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Services\\Couleurs\\CouleurService.cs",
+              "RelativeToolTip": "ArtOfDesign.Application\\Services\\Couleurs\\CouleurService.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAqwIQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T07:44:29.285Z"
+              "WhenOpened": "2026-11-03T10:44:12.182Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 200,
+          "DockedHeight": 72,
           "SelectedChildIndex": -1,
           "Children": [
             {

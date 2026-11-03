@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ArtOfDesign.Application\ArtOfDesign.Application.csproj" />
     <ProjectReference Include="..\ArtOfDesign.Infrastructure\ArtOfDesign.Infrastructure.csproj" />
   </ItemGroup>

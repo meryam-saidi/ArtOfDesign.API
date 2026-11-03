@@ -13,3 +13,4 @@ C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Application\obj
 C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Application\obj\Debug\net8.0\refint\ArtOfDesign.Application.dll
 C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Application\obj\Debug\net8.0\ArtOfDesign.Application.pdb
 C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Application\obj\Debug\net8.0\ref\ArtOfDesign.Application.dll
+C:\Users\Mariem\Documents\0 asma\ArtOfDesign.Backend\ArtOfDesign.Application\obj\Debug\net8.0\ArtOfDesign.Application.sourcelink.json
