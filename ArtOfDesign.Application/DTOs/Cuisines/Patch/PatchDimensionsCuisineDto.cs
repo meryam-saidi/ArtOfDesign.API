@@ -12,4 +12,4 @@ public class PatchDimensionsCuisineDto
     public string? ProfondeurCaissonBas { get; set; }
     public string? HauteurCaissonHaut { get; set; }
     public string? ProfondeurCaissonHaut { get; set; }
-}
+} 

@@ -206,5 +206,5 @@ public class CuisinesController : ControllerBase
             });
 
         return NoContent();
-    }
+    } 
 }

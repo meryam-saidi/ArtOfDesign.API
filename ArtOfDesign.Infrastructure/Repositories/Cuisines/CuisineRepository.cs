@@ -56,5 +56,5 @@ public class CuisineRepository : ICuisineRepository
     {
         _context.ImagesCuisine.Remove(image);
         await _context.SaveChangesAsync();
-    }
+    } 
 }

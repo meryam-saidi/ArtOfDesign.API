@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.api\\controllers\\couleurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|solutionrelative:artofdesign.api\\controllers\\couleurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.application\\services\\couleurs\\couleurservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25A6541C-27CC-44A7-B225-5DB3C8CC5685}|ArtOfDesign.Application\\ArtOfDesign.Application.csproj|solutionrelative:artofdesign.application\\services\\couleurs\\couleurservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 496,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,32 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CouleursController.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Controllers\\CouleursController.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.API\\Controllers\\CouleursController.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Controllers\\CouleursController.cs",
-              "RelativeToolTip": "ArtOfDesign.API\\Controllers\\CouleursController.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAcwGUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T15:29:29.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CouleurService.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Services\\Couleurs\\CouleurService.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Application\\Services\\Couleurs\\CouleurService.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Application\\Services\\Couleurs\\CouleurService.cs",
-              "RelativeToolTip": "ArtOfDesign.Application\\Services\\Couleurs\\CouleurService.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAqwIQAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T10:44:12.182Z",
-              "EditorCaption": ""
             }
           ]
         },

@@ -15,5 +15,4 @@ public interface ICuisineRepository
     Task UpdateAsync(Cuisine cuisine);
 
     Task DeleteImageAsync(ImageCuisine image);
-
 }

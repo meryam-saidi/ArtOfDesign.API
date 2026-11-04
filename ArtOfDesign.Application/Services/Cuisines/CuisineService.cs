@@ -396,5 +396,5 @@ public class CuisineService : ICuisineService
         await _repository.DeleteImageAsync(image);
 
         return true;
-    }
+    } 
 }

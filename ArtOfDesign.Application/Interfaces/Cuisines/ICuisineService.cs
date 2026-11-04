@@ -19,4 +19,4 @@ public interface ICuisineService
         List<CreateCuisineImageDto> nouvellesImages);
 
     Task<bool> DeleteImageAsync(string cuisineId, int imageId);
-}
+} 

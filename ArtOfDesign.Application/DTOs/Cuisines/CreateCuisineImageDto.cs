@@ -12,4 +12,4 @@ public class CreateCuisineImageDto
     public string FileName { get; set; } = string.Empty;
     public int OrdreAffichage { get; set; }
     public bool EstPrincipale { get; set; }
-}
+} 

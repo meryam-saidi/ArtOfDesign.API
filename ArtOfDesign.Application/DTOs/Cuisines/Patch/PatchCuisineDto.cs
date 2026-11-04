@@ -23,4 +23,4 @@ public class PatchCuisineDto
     { get; set; }
 
     public List<int>? CouleurIds { get; set; }
-}
+} 
