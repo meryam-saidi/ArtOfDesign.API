@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtOfDesign.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33031920e7bdacc2b48f28384fb73615a32d6d89")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f65b5f8f95b600a457584c188f662766167ceac8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtOfDesign.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtOfDesign.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

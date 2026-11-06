@@ -23,7 +23,7 @@ public class AppDbContext : DbContext
     public DbSet<CuisineCouleur> CuisineCouleurs => Set<CuisineCouleur>();
 
     public DbSet<Dressing> Dressings => Set<Dressing>();
-    public DbSet<Dimensionsdressing> Dimensionsdressings => Set<Dimensionsdressing>();
+    public DbSet<DimensionsDressing> DimensionsDressings => Set<DimensionsDressing>(); 
     public DbSet<ImageDressing> ImagesDressing => Set<ImageDressing>();
     public DbSet<CaracteristiquesTechniquesDressing> CaracteristiquesTechniquesDressings 
         => Set<CaracteristiquesTechniquesDressing>();
@@ -42,6 +42,10 @@ public class AppDbContext : DbContext
         modelBuilder.ApplyConfiguration(
             new Configurations.CuisineCouleurConfiguration());
 
-
+        modelBuilder.ApplyConfiguration(new Configurations.Dressings.DressingConfiguration());
+        modelBuilder.ApplyConfiguration(
+            new Configurations.Dressings.CaracteristiquesTechniquesDressingConfiguration());
+        modelBuilder.ApplyConfiguration(
+            new Configurations.Dressings.DressingCouleurConfiguration());
     }
 }

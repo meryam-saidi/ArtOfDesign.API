@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\persistence\\configurations\\dressings\\dressingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\persistence\\configurations\\dressings\\dressingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\migrations\\20261106173437_adddressings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\migrations\\20261106173437_adddressings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\repositories\\cuisines\\cuisinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\repositories\\cuisines\\cuisinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{104791BC-120C-4146-B286-B428F53C29C2}|ArtOfDesign.Domain\\ArtOfDesign.Domain.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.domain\\entities\\dressing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{104791BC-120C-4146-B286-B428F53C29C2}|ArtOfDesign.Domain\\ArtOfDesign.Domain.csproj|solutionrelative:artofdesign.domain\\entities\\dressing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\persistence\\configurations\\dressings\\dressingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\persistence\\configurations\\dressings\\dressingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 496,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20261106173437_AddDressings.cs",
+              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Migrations\\20261106173437_AddDressings.cs",
+              "RelativeDocumentMoniker": "ArtOfDesign.Infrastructure\\Migrations\\20261106173437_AddDressings.cs",
+              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Migrations\\20261106173437_AddDressings.cs",
+              "RelativeToolTip": "ArtOfDesign.Infrastructure\\Migrations\\20261106173437_AddDressings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T17:34:38.13Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -43,28 +64,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CuisineRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Repositories\\Cuisines\\CuisineRepository.cs",
+              "RelativeDocumentMoniker": "ArtOfDesign.Infrastructure\\Repositories\\Cuisines\\CuisineRepository.cs",
+              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Repositories\\Cuisines\\CuisineRepository.cs",
+              "RelativeToolTip": "ArtOfDesign.Infrastructure\\Repositories\\Cuisines\\CuisineRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T17:06:54.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Dressing.cs",
               "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Domain\\Entities\\Dressing.cs",
               "RelativeDocumentMoniker": "ArtOfDesign.Domain\\Entities\\Dressing.cs",
               "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Domain\\Entities\\Dressing.cs",
               "RelativeToolTip": "ArtOfDesign.Domain\\Entities\\Dressing.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBUAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-06T10:37:36.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-06T10:37:36.354Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "DressingConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Persistence\\Configurations\\Dressings\\DressingConfiguration.cs",
               "RelativeDocumentMoniker": "ArtOfDesign.Infrastructure\\Persistence\\Configurations\\Dressings\\DressingConfiguration.cs",
               "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Persistence\\Configurations\\Dressings\\DressingConfiguration.cs",
               "RelativeToolTip": "ArtOfDesign.Infrastructure\\Persistence\\Configurations\\Dressings\\DressingConfiguration.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwCMAAAAbAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwCIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-06T06:37:40.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-06T06:37:40.171Z"
             },
             {
               "$type": "Document",
@@ -74,7 +106,7 @@
               "RelativeDocumentMoniker": "ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
               "RelativeToolTip": "ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAkwBoAAAAuAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-06T06:29:59.556Z"
             }
