@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\persistence\\configurations\\dressings\\dressingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\persistence\\configurations\\dressings\\dressingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104791BC-120C-4146-B286-B428F53C29C2}|ArtOfDesign.Domain\\ArtOfDesign.Domain.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.domain\\entities\\dressing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104791BC-120C-4146-B286-B428F53C29C2}|ArtOfDesign.Domain\\ArtOfDesign.Domain.csproj|solutionrelative:artofdesign.domain\\entities\\dressing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 496,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +39,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dressing.cs",
+              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Domain\\Entities\\Dressing.cs",
+              "RelativeDocumentMoniker": "ArtOfDesign.Domain\\Entities\\Dressing.cs",
+              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Domain\\Entities\\Dressing.cs",
+              "RelativeToolTip": "ArtOfDesign.Domain\\Entities\\Dressing.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T10:37:36.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DressingConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Persistence\\Configurations\\Dressings\\DressingConfiguration.cs",
+              "RelativeDocumentMoniker": "ArtOfDesign.Infrastructure\\Persistence\\Configurations\\Dressings\\DressingConfiguration.cs",
+              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Persistence\\Configurations\\Dressings\\DressingConfiguration.cs",
+              "RelativeToolTip": "ArtOfDesign.Infrastructure\\Persistence\\Configurations\\Dressings\\DressingConfiguration.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwCMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T06:37:40.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeToolTip": "ArtOfDesign.Infrastructure\\Persistence\\AppDbContext.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAkwBoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T06:29:59.556Z"
             }
           ]
         },
