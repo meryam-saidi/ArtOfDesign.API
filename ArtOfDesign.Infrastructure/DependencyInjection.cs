@@ -7,6 +7,9 @@ using ArtOfDesign.Application.Interfaces.Cuisines;
 using ArtOfDesign.Infrastructure.Repositories.Cuisines;
 using ArtOfDesign.Application.Interfaces.Couleurs;
 using ArtOfDesign.Infrastructure.Repositories.Couleurs;
+using ArtOfDesign.Application.Interfaces.Dressings;
+using ArtOfDesign.Application.Services.Dressings;
+using ArtOfDesign.Infrastructure.Repositories.Dressings;
 
 namespace ArtOfDesign.Infrastructure;
 
@@ -32,6 +35,7 @@ public static class DependencyInjection
 
         services.AddScoped<ICuisineRepository, CuisineRepository>();
         services.AddScoped<ICouleurRepository, CouleurRepository>();
+        services.AddScoped<IDressingRepository, DressingRepository>();
 
         return services;
     }

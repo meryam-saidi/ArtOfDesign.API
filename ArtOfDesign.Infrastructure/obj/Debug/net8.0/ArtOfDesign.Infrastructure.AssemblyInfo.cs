@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtOfDesign.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f65b5f8f95b600a457584c188f662766167ceac8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b67e2366d9bd977d8a5393ef882c22d1f827dc9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtOfDesign.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtOfDesign.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
