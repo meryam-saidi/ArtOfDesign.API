@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArtOfDesign.Application.DTOs.Dressings;
+namespace ArtOfDesign.Application.DTOs.Dressings.Update;
 
 public class UpdateDressingDto
 {
@@ -17,9 +17,9 @@ public class UpdateDressingDto
     public int Reduction { get; set; }
     public string Description { get; set; } = string.Empty;
 
-    public DimensionsDressing Dimensions { get; set; } = null!;
-    public List<ImageDressing> Images { get; set; } = new();
-    public CaracteristiquesTechniquesDressing CaracteristiquesTechniques
+    public DimensionsDressingDto Dimensions { get; set; } = null!;
+    public List<UpdateImageDressingDto> Images { get; set; } = new();
+    public CaracteristiquesTechniquesDressingDto CaracteristiquesTechniques
     { get; set; } = null!;
-    public List<DressingCouleur> DressingCouleurs { get; set; } = new();
+    public List<int> CouleurIds { get; set; } = new();
 }

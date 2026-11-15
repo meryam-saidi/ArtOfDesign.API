@@ -42,21 +42,27 @@ public class DressingRepository : IDressingRepository
             .FirstOrDefaultAsync(d => d.Id == id);
     }
 
-    public async Task AddAsync(Dressing cuisine)
+    public async Task AddAsync(Dressing dressing)
     {
         using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(10));
 
-        await _appDbContext.Dressings.AddAsync(cuisine, cts.Token);
+        await _appDbContext.Dressings.AddAsync(dressing, cts.Token);
         await _appDbContext.SaveChangesAsync(cts.Token);
     }
 
-    public Task DeleteImageAsync(ImageDressing image)
+    public async Task UpdateAsync(Dressing dressing)
     {
-        throw new NotImplementedException();
+        using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(10));
+        // Une autre façon de faire les choses
+        // Entity Framework suit déjà l'entité si elle a été récupérée dans le même contexte,
+        // mais on peut explicitement marquer l'état ou sauvegarder.
+        _appDbContext.Dressings.Update(dressing);
+        await _appDbContext.SaveChangesAsync(cts.Token);
     }
 
-    public Task UpdateAsync(Dressing cuisine)
+    public async Task DeleteImageAsync(ImageDressing image)
     {
-        throw new NotImplementedException();
+        _appDbContext.ImagesDressing.Remove(image);
+        await _appDbContext.SaveChangesAsync();
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArtOfDesign.Application.DTOs.Dressings;
+namespace ArtOfDesign.Application.DTOs.Dressings.Create;
 
 public class CreateDressingDto
 {

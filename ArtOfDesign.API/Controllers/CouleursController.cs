@@ -1,4 +1,4 @@
-﻿using ArtOfDesign.API.Extensions;
+﻿using ArtOfDesign.API.Extensions.Couleurs;
 using ArtOfDesign.Application.DTOs.Couleurs;
 using ArtOfDesign.Application.Interfaces.Couleurs;
 using ArtOfDesign.Application.Services.Couleurs;

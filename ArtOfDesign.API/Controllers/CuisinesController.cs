@@ -1,6 +1,9 @@
 ﻿
+using ArtOfDesign.API.Extensions.Cuisines;
 using ArtOfDesign.Application.DTOs.Cuisines;
+using ArtOfDesign.Application.DTOs.Cuisines.Create;
 using ArtOfDesign.Application.DTOs.Cuisines.Patch;
+using ArtOfDesign.Application.DTOs.Cuisines.Update;
 using ArtOfDesign.Application.Interfaces.Cuisines;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
@@ -81,25 +84,71 @@ public class CuisinesController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> Update(
-    string id,
-    [FromBody] UpdateCuisineDto dto)
+    [Consumes("multipart/form-data")]
+    public async Task<ActionResult<CuisineDto>> Update(
+        string id,
+        [FromForm] UpdateCuisineForm form)
     {
+        var dto = new UpdateCuisineDto
+        {
+            Categorie = form.Categorie,
+            Forme = form.Forme,
+            Nom = form.Nom,
+            PrixInitial = form.PrixInitial,
+            Reduction = form.Reduction,
+            Description = form.Description,
+            Nb = form.Nb,
+
+            Dimensions = new()
+            {
+                HauteurCaissonBas = form.HauteurCaissonBas,
+                ProfondeurCaissonBas = form.ProfondeurCaissonBas,
+                HauteurCaissonHaut = form.HauteurCaissonHaut,
+                ProfondeurCaissonHaut = form.ProfondeurCaissonHaut
+            },
+
+            CaracteristiquesTechniques = new()
+            {
+                CompositionType = form.CompositionType,
+                Caisson = form.Caisson,
+                Facade = form.Facade
+            },
+
+            CouleurIds = form.CouleurIds
+        };
+
+        // Conversion des fichiers en streams
+        var streams = new List<Stream>();
+
         try
         {
-            var cuisine = await _cuisineService.UpdateAsync(id, dto);
+            foreach (var file in form.Images)
+            {
+                var stream = file.OpenReadStream();
+                streams.Add(stream);
 
-            if (cuisine is null)
-                return NotFound(new
+                // Remplacer CuisineImageDto par le type réel
+                // utilisé dans UpdateCuisineDto.Images.
+                dto.Images.Add(new UpdateImageCuisineDto
                 {
-                    message = $"Aucune cuisine trouvée avec l'id '{id}'."
+                    FileStream = stream,
+                    FileName = file.FileName,
+                    OrdreAffichage = streams.Count - 1,
+                    EstPrincipale = streams.Count == 1
                 });
+            }
 
-            return Ok(cuisine);
+            var result = await _cuisineService.UpdateAsync(id, dto);
+
+            if (result == null)
+                return NotFound(new { message = "Cuisine introuvable." });
+
+            return Ok(result);
         }
-        catch (InvalidOperationException ex)
+        finally
         {
-            return BadRequest(new { message = ex.Message });
+            foreach (var stream in streams)
+                await stream.DisposeAsync();
         }
     }
 

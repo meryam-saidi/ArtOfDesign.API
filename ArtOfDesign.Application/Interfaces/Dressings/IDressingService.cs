@@ -1,4 +1,6 @@
 ﻿using ArtOfDesign.Application.DTOs.Dressings;
+using ArtOfDesign.Application.DTOs.Dressings.Create;
+using ArtOfDesign.Application.DTOs.Dressings.Update;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,5 +24,5 @@ public interface IDressingService
         PatchDressingDto dto,
         List<CreateDressingImageDto> nouvellesImages);*/
 
-    Task<bool> DeleteImageAsync(string DressingId, int imageId);
+    Task<bool> DeleteImageAsync(string dressingId, int imageId);
 }

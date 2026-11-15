@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArtOfDesign.Application.DTOs.Dressings;
+namespace ArtOfDesign.Application.DTOs.Cuisines.Create;
 
-public class CreateDressingImageDto
+public class CreateCuisineImageDto
 {
     public Stream FileStream { get; set; } = Stream.Null;
     public string FileName { get; set; } = string.Empty;

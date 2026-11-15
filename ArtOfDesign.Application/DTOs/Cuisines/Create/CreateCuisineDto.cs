@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ArtOfDesign.Application.DTOs.Cuisines;
+namespace ArtOfDesign.Application.DTOs.Cuisines.Create;
 
 public class CreateCuisineDto
 {
@@ -15,4 +15,4 @@ public class CreateCuisineDto
     public CaracteristiquesTechniquesCuisineDto CaracteristiquesTechniques { get; set; } = new();
     public List<CreateCuisineImageDto> Images { get; set; } = new();
     public List<int> CouleurIds { get; set; } = new();
-} 
+}

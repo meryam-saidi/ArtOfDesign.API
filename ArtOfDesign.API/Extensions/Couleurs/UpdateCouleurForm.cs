@@ -1,4 +1,4 @@
-﻿namespace ArtOfDesign.API.Extensions;
+﻿namespace ArtOfDesign.API.Extensions.Couleurs;
 
 public class UpdateCouleurForm
 {

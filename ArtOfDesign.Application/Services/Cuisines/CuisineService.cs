@@ -1,9 +1,15 @@
 ﻿
 using ArtOfDesign.Application.DTOs.Cuisines;
+using ArtOfDesign.Application.DTOs.Cuisines.Create;
 using ArtOfDesign.Application.DTOs.Cuisines.Patch;
+using ArtOfDesign.Application.DTOs.Cuisines.Update;
+using ArtOfDesign.Application.DTOs.Cuisines.Update;
+using ArtOfDesign.Application.DTOs.Cuisines;
 using ArtOfDesign.Application.Interfaces;
 using ArtOfDesign.Application.Interfaces.Cuisines;
+using ArtOfDesign.Application.Interfaces.Cuisines;
 using ArtOfDesign.Domain.Entities;
+using ArtOfDesign.Domain.Entities.Cuisines;
 using ArtOfDesign.Domain.Entities.Cuisines;
 
 namespace ArtOfDesign.Application.Services.Cuisines;
@@ -154,71 +160,118 @@ public class CuisineService : ICuisineService
         return MapToDto(cuisineCreee);
     }
 
-    public async Task<CuisineDto?> UpdateAsync(
-    string id,
-    UpdateCuisineDto dto)
+    public async Task<CuisineDto?> UpdateAsync(string id, UpdateCuisineDto dto)
     {
-        var cuisineExistante = await _repository.GetByIdAsync(id);
+        // 1. Récupérer le Cuisine existant AVEC toutes ses relations (via le repository)
+        var cuisine = await _repository.GetByIdAsync(id);
+        if (cuisine == null)
+            return null; // Le Cuisine n'existe pas -> le contrôleur renverra un 404
 
-        if (cuisineExistante is null)
-            return null;
+        // 2. Mettre à jour les propriétés simples de l'entité Cuisine
+        cuisine.Categorie = dto.Categorie;
+        cuisine.Forme = dto.Forme;
+        cuisine.Nom = dto.Nom;
+        cuisine.PrixInitial = dto.PrixInitial;
+        cuisine.Reduction = dto.Reduction;
+        cuisine.Description = dto.Description;
+        cuisine.Nb = dto.Nb;
 
-        var cuisineAMettreAJour = new Cuisine
+        // 3. Mettre à jour les Dimensions (comme c'est un objet 1-to-1, on met à jour ses propriétés)
+        if (cuisine.Dimensions != null)
         {
-            Id = id,
-            Categorie = dto.Categorie,
-            Forme = dto.Forme,
-            Nom = dto.Nom,
-            PrixInitial = dto.PrixInitial,
-            Reduction = dto.Reduction,
-            Description = dto.Description,
-            Nb = dto.Nb,
-
-            Dimensions = new DimensionsCuisine
+            cuisine.Dimensions.HauteurCaissonBas = dto.Dimensions.HauteurCaissonBas;
+            cuisine.Dimensions.ProfondeurCaissonBas = dto.Dimensions.ProfondeurCaissonBas;
+            cuisine.Dimensions.HauteurCaissonBas = dto.Dimensions.HauteurCaissonHaut;
+            cuisine.Dimensions.ProfondeurCaissonHaut = dto.Dimensions.ProfondeurCaissonHaut;
+        }
+        else
+        {
+            // Sécurité au cas où elles n'existeraient pas
+            cuisine.Dimensions = new DimensionsCuisine
             {
                 HauteurCaissonBas = dto.Dimensions.HauteurCaissonBas,
                 ProfondeurCaissonBas = dto.Dimensions.ProfondeurCaissonBas,
                 HauteurCaissonHaut = dto.Dimensions.HauteurCaissonHaut,
-                ProfondeurCaissonHaut = dto.Dimensions.ProfondeurCaissonHaut,
-                CuisineId = id
-            },
+                ProfondeurCaissonHaut = dto.Dimensions.ProfondeurCaissonHaut
+            };
+        }
 
-            CaracteristiquesTechniques = new CaracteristiquesTechniquesCuisine
+        // 4. Mettre à jour les Caractéristiques Techniques
+        if (cuisine.CaracteristiquesTechniques != null)
+        {
+            cuisine.CaracteristiquesTechniques.CompositionType = dto.CaracteristiquesTechniques.CompositionType;
+            cuisine.CaracteristiquesTechniques.Caisson = dto.CaracteristiquesTechniques.Caisson;
+            cuisine.CaracteristiquesTechniques.Facade = dto.CaracteristiquesTechniques.Facade;
+        }
+        else
+        {
+            cuisine.CaracteristiquesTechniques = new CaracteristiquesTechniquesCuisine
             {
                 CompositionType = dto.CaracteristiquesTechniques.CompositionType,
                 Caisson = dto.CaracteristiquesTechniques.Caisson,
-                Facade = dto.CaracteristiquesTechniques.Facade,
-                CuisineId = id
-            },
+                Facade = dto.CaracteristiquesTechniques.Facade
+            };
+        }
 
-            Images = dto.Images.Select(i => new ImageCuisine
+        // 5. Gérer les Couleurs (Relation Many-to-Many via CuisineCouleurs)
+        // La stratégie la plus propre en PUT : On vide la liste actuelle et on recrée les associations demandées
+        cuisine.CuisineCouleurs.Clear();
+        foreach (var couleurId in dto.CouleurIds.Distinct())
+        {
+            cuisine.CuisineCouleurs.Add(new CuisineCouleur
             {
-                Id = i.Id,
-                Url = i.Url,
-                OrdreAffichage = i.OrdreAffichage,
-                EstPrincipale = i.EstPrincipale,
-                CuisineId = id
-            }).ToList(),
+                CuisineId = cuisine.Id,
+                CouleurId = couleurId
+            });
+        }
 
-            CuisineCouleurs = dto.CouleurIds
-                .Distinct()
-                .Select(couleurId => new CuisineCouleur
+        // 6. Gérer les Images (Attention au stockage physique/cloud et aux images existantes)
+        // Ici, on gère le cas où l'utilisateur envoie de nouvelles images ou garde les existantes.
+        var updatedImages = new List<ImageCuisine>();
+
+        foreach (var imageDto in dto.Images)
+        {
+            // CAS 1 : C'est une NOUVELLE image envoyée sous forme de fichier
+            if (imageDto.FileStream != null && imageDto.FileStream.Length > 0)
+            {
+                var uploadResult = await _imageStorageService.UploadImageAsync(
+                    imageDto.FileStream,
+                    imageDto.FileName);
+
+                updatedImages.Add(new ImageCuisine
                 {
-                    CuisineId = id,
-                    CouleurId = couleurId
-                })
-                .ToList()
-        };
+                    Url = uploadResult.Url,
+                    PublicId = uploadResult.PublicId,
+                    OrdreAffichage = imageDto.OrdreAffichage,
+                    EstPrincipale = imageDto.EstPrincipale
+                });
+            }
+            // CAS 2 : C'est une image EXISTANTE que l'on souhaite conserver
+            else if (imageDto.Id.HasValue && !string.IsNullOrEmpty(imageDto.Url))
+            {
+                updatedImages.Add(new ImageCuisine
+                {
+                    Id = imageDto.Id.Value, // On garde l'ID existant
+                    Url = imageDto.Url,     // On garde l'URL existante
+                    OrdreAffichage = imageDto.OrdreAffichage,
+                    EstPrincipale = imageDto.EstPrincipale
+                });
+            }
+        }
 
-        await _repository.UpdateAsync(cuisineAMettreAJour);
+        // On remplace l'ancienne liste par la nouvelle
+        cuisine.Images = updatedImages;
 
-        // Relire la cuisine avec ses relations pour produire le DTO de réponse.
-        var cuisineMiseAJour = await _repository.GetByIdAsync(id);
+        // 7. Sauvegarder via le Repository
+        await _repository.UpdateAsync(cuisine);
 
-        if (cuisineMiseAJour is null)
-            return null;
+        // 8. Re-récupérer proprement l'objet mis à jour pour garantir l'intégrité (exactement comme dans Create)
+        var cuisineMisAJour = await _repository.GetByIdAsync(cuisine.Id);
+        if (cuisineMisAJour is null)
+            throw new InvalidOperationException("Le Cuisine a été mis à jour, mais sa récupération a échoué.");
 
-        return MapToDto(cuisineMiseAJour);
+        // 9. Retourner le DTO formaté
+        return MapToDto(cuisineMisAJour);
     }
 
     public async Task<CuisineDto?> PatchAsync(

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArtOfDesign.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b67e2366d9bd977d8a5393ef882c22d1f827dc9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc4595b27c47d9c583fe4daafaecd8300ff6793c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArtOfDesign.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArtOfDesign.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

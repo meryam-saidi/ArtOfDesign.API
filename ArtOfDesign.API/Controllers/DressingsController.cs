@@ -1,6 +1,10 @@
-﻿using ArtOfDesign.Application.DTOs.Cuisines;
+﻿using ArtOfDesign.API.Extensions.Dressings;
+using ArtOfDesign.Application.DTOs.Cuisines;
 using ArtOfDesign.Application.DTOs.Dressings;
+using ArtOfDesign.Application.DTOs.Dressings.Create;
+using ArtOfDesign.Application.DTOs.Dressings.Update;
 using ArtOfDesign.Application.Interfaces.Dressings;
+using ArtOfDesign.Application.Services.Dressings;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArtOfDesign.API.Controllers;
@@ -9,24 +13,24 @@ namespace ArtOfDesign.API.Controllers;
 [Route("api/[controller]")]
 public class DressingsController : ControllerBase
 {
-    private readonly IDressingService _DressingService;
+    private readonly IDressingService _dressingService;
 
     public DressingsController(IDressingService DressingService)
     {
-        _DressingService = DressingService;
+        _dressingService = DressingService;
     }
 
     [HttpGet]
     public async Task<ActionResult<List<DressingDto>>> GetAll()
     {
-        var Dressings = await _DressingService.GetAllAsync();
+        var Dressings = await _dressingService.GetAllAsync();
         return Ok(Dressings);
     }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<DressingDto>> GetById(string id)
     {
-        var Dressing = await _DressingService.GetByIdAsync(id);
+        var Dressing = await _dressingService.GetByIdAsync(id);
 
         if (Dressing == null) return NotFound();
 
@@ -63,7 +67,7 @@ public class DressingsController : ControllerBase
                 };
             }).ToList();
 
-            var cuisine = await _DressingService.CreateAsync(dto);
+            var cuisine = await _dressingService.CreateAsync(dto);
 
             return CreatedAtAction(
                 nameof(GetById),
@@ -75,5 +79,87 @@ public class DressingsController : ControllerBase
             foreach (var stream in streams)
                 await stream.DisposeAsync();
         }
+    }
+
+    [HttpPut("{id}")]
+    [Consumes("multipart/form-data")]
+    public async Task<ActionResult<DressingDto>> Update(
+        string id,
+        [FromForm] UpdateDressingForm form)
+    {
+        var dto = new UpdateDressingDto
+        {
+            Categorie = form.Categorie,
+            Forme = form.Forme,
+            TypeOuverture = form.TypeOuverture,
+            Nom = form.Nom,
+            PrixInitial = form.PrixInitial,
+            Reduction = form.Reduction,
+            Description = form.Description,
+
+            Dimensions = new()
+            {
+                Largeur = form.Largeur,
+                Hauteur = form.Hauteur,
+                Profondeur = form.Profondeur
+            },
+
+            CaracteristiquesTechniques = new()
+            {
+                CompositionType = form.CompositionType,
+                Caisson = form.Caisson,
+                Facade = form.Facade
+            },
+
+            CouleurIds = form.CouleurIds
+        };
+
+        // Conversion des fichiers en streams
+        var streams = new List<Stream>();
+
+        try
+        {
+            foreach (var file in form.Images)
+            {
+                var stream = file.OpenReadStream();
+                streams.Add(stream);
+
+                // Remplacer DressingImageDto par le type réel
+                // utilisé dans UpdateDressingDto.Images.
+                dto.Images.Add(new UpdateImageDressingDto
+                {
+                    FileStream = stream,
+                    FileName = file.FileName,
+                    OrdreAffichage = streams.Count - 1,
+                    EstPrincipale = streams.Count == 1
+                });
+            }
+
+            var result = await _dressingService.UpdateAsync(id, dto);
+
+            if (result == null)
+                return NotFound(new { message = "Dressing introuvable." });
+
+            return Ok(result);
+        }
+        finally
+        {
+            foreach (var stream in streams)
+                await stream.DisposeAsync();
+        }
+    }
+
+    [HttpDelete("{id}/images/{imageId:int}")]
+    public async Task<IActionResult> DeleteImage(string id, int imageId)
+    {
+        var deleted = await _dressingService.DeleteImageAsync(id, imageId);
+
+        if (!deleted)
+            return NotFound(new
+            {
+                message = "Cuisine ou image introuvable."
+            });
+
+        return NoContent();
     }
 }

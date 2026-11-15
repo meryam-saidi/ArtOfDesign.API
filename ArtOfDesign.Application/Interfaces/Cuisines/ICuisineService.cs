@@ -1,5 +1,7 @@
 ﻿using ArtOfDesign.Application.DTOs.Cuisines;
+using ArtOfDesign.Application.DTOs.Cuisines.Create;
 using ArtOfDesign.Application.DTOs.Cuisines.Patch;
+using ArtOfDesign.Application.DTOs.Cuisines.Update;
 
 namespace ArtOfDesign.Application.Interfaces.Cuisines;
 

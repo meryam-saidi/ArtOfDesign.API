@@ -1,4 +1,5 @@
-﻿namespace ArtOfDesign.Application.DTOs.Cuisines;
+﻿
+namespace ArtOfDesign.Application.DTOs.Cuisines.Update;
 
 public class UpdateCuisineDto
 {
@@ -11,9 +12,9 @@ public class UpdateCuisineDto
     public string Nb { get; set; } = string.Empty;
 
     public DimensionsCuisineDto? Dimensions { get; set; } = new();
-    public CaracteristiquesTechniquesCuisineDto? CaracteristiquesTechniques { get; set; } = new();
-
-    public List<ImageCuisineDto> Images { get; set; } = new(); //les nouveaux fichiers seront reçus séparément par le contrôleur.
-    
+    public CaracteristiquesTechniquesCuisineDto? CaracteristiquesTechniques
+    { get; set; } = new();
+    public List<UpdateImageCuisineDto> Images { get; set; } = new();
+    //les nouveaux fichiers seront reçus séparément par le contrôleur.
     public List<int> CouleurIds { get; set; } = new();
 }
