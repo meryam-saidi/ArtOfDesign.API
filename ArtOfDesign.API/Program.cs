@@ -5,10 +5,10 @@ using ArtOfDesign.Application.Interfaces.Cuisines;
 using ArtOfDesign.Application.Services.Cuisines;
 using ArtOfDesign.Application.Services.Couleurs;
 using ArtOfDesign.Application.Interfaces.Couleurs;
-using ArtOfDesign.Application.Interfaces;
-using ArtOfDesign.Infrastructure.Services;
 using ArtOfDesign.Application.Interfaces.Dressings;
 using ArtOfDesign.Application.Services.Dressings;
+using ArtOfDesign.Application.Services.Meubles;
+using ArtOfDesign.Application.Interfaces.Meubles;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +30,8 @@ builder.Services.AddScoped<ICuisineService, CuisineService>();
 builder.Services.AddScoped<ICouleurService, CouleurService>();
 
 builder.Services.AddScoped<IDressingService, DressingService>();
+
+builder.Services.AddScoped<IMeubleService, MeubleService>();
 
 builder.Services.AddCors(options =>
 {

@@ -369,6 +369,157 @@ namespace ArtOfDesign.Infrastructure.Migrations
                     b.ToTable("ImagesDressing");
                 });
 
+            modelBuilder.Entity("ArtOfDesign.Domain.Entities.Meuble", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Categorie")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("Forme")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Nom")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<decimal>("PrixInitial")
+                        .HasColumnType("decimal(10,3)");
+
+                    b.Property<int>("Reduction")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Meubles", (string)null);
+                });
+
+            modelBuilder.Entity("ArtOfDesign.Domain.Entities.Meubles.CaracteristiquesTechniquesMeuble", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Caisson")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("CompositionType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Facade")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("MeubleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MeubleId")
+                        .IsUnique();
+
+                    b.ToTable("CaracteristiquesTechniquesMeubles", (string)null);
+                });
+
+            modelBuilder.Entity("ArtOfDesign.Domain.Entities.Meubles.DimensionsMeuble", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Hauteur")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Largeur")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MeubleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Profondeur")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MeubleId")
+                        .IsUnique();
+
+                    b.ToTable("DimensionsMeubles");
+                });
+
+            modelBuilder.Entity("ArtOfDesign.Domain.Entities.Meubles.ImageMeuble", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("EstPrincipale")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("MeubleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("OrdreAffichage")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PublicId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MeubleId");
+
+                    b.ToTable("ImagesMeuble");
+                });
+
+            modelBuilder.Entity("ArtOfDesign.Domain.Entities.Meubles.MeubleCouleur", b =>
+                {
+                    b.Property<string>("MeubleId")
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("CouleurId")
+                        .HasColumnType("int");
+
+                    b.HasKey("MeubleId", "CouleurId");
+
+                    b.HasIndex("CouleurId");
+
+                    b.ToTable("MeubleCouleurs");
+                });
+
             modelBuilder.Entity("ArtOfDesign.Domain.Entities.Cuisines.CaracteristiquesTechniquesCuisine", b =>
                 {
                     b.HasOne("ArtOfDesign.Domain.Entities.Cuisine", null)
@@ -461,6 +612,52 @@ namespace ArtOfDesign.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("ArtOfDesign.Domain.Entities.Meubles.CaracteristiquesTechniquesMeuble", b =>
+                {
+                    b.HasOne("ArtOfDesign.Domain.Entities.Meuble", null)
+                        .WithOne("CaracteristiquesTechniques")
+                        .HasForeignKey("ArtOfDesign.Domain.Entities.Meubles.CaracteristiquesTechniquesMeuble", "MeubleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ArtOfDesign.Domain.Entities.Meubles.DimensionsMeuble", b =>
+                {
+                    b.HasOne("ArtOfDesign.Domain.Entities.Meuble", null)
+                        .WithOne("Dimensions")
+                        .HasForeignKey("ArtOfDesign.Domain.Entities.Meubles.DimensionsMeuble", "MeubleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ArtOfDesign.Domain.Entities.Meubles.ImageMeuble", b =>
+                {
+                    b.HasOne("ArtOfDesign.Domain.Entities.Meuble", null)
+                        .WithMany("Images")
+                        .HasForeignKey("MeubleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ArtOfDesign.Domain.Entities.Meubles.MeubleCouleur", b =>
+                {
+                    b.HasOne("ArtOfDesign.Domain.Entities.Catalogue.Couleur", "Couleur")
+                        .WithMany()
+                        .HasForeignKey("CouleurId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("ArtOfDesign.Domain.Entities.Meuble", "Meuble")
+                        .WithMany("MeubleCouleurs")
+                        .HasForeignKey("MeubleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Couleur");
+
+                    b.Navigation("Meuble");
+                });
+
             modelBuilder.Entity("ArtOfDesign.Domain.Entities.Cuisine", b =>
                 {
                     b.Navigation("CaracteristiquesTechniques")
@@ -485,6 +682,19 @@ namespace ArtOfDesign.Infrastructure.Migrations
                     b.Navigation("DressingCouleurs");
 
                     b.Navigation("Images");
+                });
+
+            modelBuilder.Entity("ArtOfDesign.Domain.Entities.Meuble", b =>
+                {
+                    b.Navigation("CaracteristiquesTechniques")
+                        .IsRequired();
+
+                    b.Navigation("Dimensions")
+                        .IsRequired();
+
+                    b.Navigation("Images");
+
+                    b.Navigation("MeubleCouleurs");
                 });
 #pragma warning restore 612, 618
         }

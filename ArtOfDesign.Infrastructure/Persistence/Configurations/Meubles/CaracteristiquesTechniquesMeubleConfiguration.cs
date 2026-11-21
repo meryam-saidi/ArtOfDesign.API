@@ -1,23 +1,19 @@
-﻿
-using ArtOfDesign.Domain.Entities.Cuisines;
+﻿using ArtOfDesign.Domain.Entities.Meubles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.Text.Json;
 
-namespace ArtOfDesign.Infrastructure.Persistence.Configurations;
+namespace ArtOfDesign.Infrastructure.Persistence.Configurations.Meubles;
 
-public class CaracteristiquesTechniquesCuisineConfiguration
-    : IEntityTypeConfiguration<CaracteristiquesTechniquesCuisine>
+public class CaracteristiquesTechniquesMeubleConfiguration :
+    IEntityTypeConfiguration<CaracteristiquesTechniquesMeuble>
 {
-    public void Configure(
-        EntityTypeBuilder<CaracteristiquesTechniquesCuisine> builder)
+    public void Configure(EntityTypeBuilder<CaracteristiquesTechniquesMeuble> builder)
     {
-        builder.ToTable("CaracteristiquesTechniquesCuisines");
-
-        builder.HasKey(c => c.Id);
-
-        builder.Property(c => c.CompositionType)
+        builder.ToTable("CaracteristiquesTechniquesMeubles");
+        builder.HasKey(ct => ct.Id);
+        builder.Property(ct => ct.CompositionType)
             .HasConversion(
                 value => JsonSerializer.Serialize(value, (JsonSerializerOptions?)null),
                 value => JsonSerializer.Deserialize<List<string>>(
@@ -32,7 +28,6 @@ public class CaracteristiquesTechniquesCuisineConfiguration
                     c => c.ToList()
                 )
             );
-
         builder.Property(c => c.Caisson).HasMaxLength(500);
         builder.Property(c => c.Facade).HasMaxLength(500);
     }

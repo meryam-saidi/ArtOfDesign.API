@@ -1,10 +1,9 @@
-﻿
-using ArtOfDesign.Domain.Entities;
+﻿using ArtOfDesign.Domain.Entities;
 using ArtOfDesign.Domain.Entities.Cuisines;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace ArtOfDesign.Infrastructure.Persistence.Configurations;
+namespace ArtOfDesign.Infrastructure.Persistence.Configurations.Cuisines;
 
 public class CuisineConfiguration : IEntityTypeConfiguration<Cuisine>
 {

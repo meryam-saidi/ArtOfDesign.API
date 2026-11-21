@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace ArtOfDesign.Infrastructure.Persistence.Configurations;
+namespace ArtOfDesign.Infrastructure.Persistence.Configurations.Cuisines;
 
 public class CuisineCouleurConfiguration : IEntityTypeConfiguration<CuisineCouleur>
 {

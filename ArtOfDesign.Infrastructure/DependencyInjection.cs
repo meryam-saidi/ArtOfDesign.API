@@ -1,6 +1,6 @@
 ﻿
 using ArtOfDesign.Application.Interfaces;
-using ArtOfDesign.Infrastructure.Services;
+using ArtOfDesign.Infrastructure.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ArtOfDesign.Application.Interfaces.Cuisines;
@@ -10,6 +10,8 @@ using ArtOfDesign.Infrastructure.Repositories.Couleurs;
 using ArtOfDesign.Application.Interfaces.Dressings;
 using ArtOfDesign.Application.Services.Dressings;
 using ArtOfDesign.Infrastructure.Repositories.Dressings;
+using ArtOfDesign.Infrastructure.Repositories.Meubles;
+using ArtOfDesign.Application.Interfaces.Meubles;
 
 namespace ArtOfDesign.Infrastructure;
 
@@ -36,6 +38,7 @@ public static class DependencyInjection
         services.AddScoped<ICuisineRepository, CuisineRepository>();
         services.AddScoped<ICouleurRepository, CouleurRepository>();
         services.AddScoped<IDressingRepository, DressingRepository>();
+        services.AddScoped<IMeubleRepository, MeubleRepository>();
 
         return services;
     }

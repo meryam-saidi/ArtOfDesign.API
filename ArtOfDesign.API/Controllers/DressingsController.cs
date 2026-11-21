@@ -67,12 +67,12 @@ public class DressingsController : ControllerBase
                 };
             }).ToList();
 
-            var cuisine = await _dressingService.CreateAsync(dto);
+            var dressing = await _dressingService.CreateAsync(dto);
 
             return CreatedAtAction(
                 nameof(GetById),
-                new { id = cuisine.Id },
-                cuisine);
+                new { id = dressing.Id },
+                dressing);
         }
         finally
         {
@@ -157,7 +157,7 @@ public class DressingsController : ControllerBase
         if (!deleted)
             return NotFound(new
             {
-                message = "Cuisine ou image introuvable."
+                message = "Dressing ou image introuvable."
             });
 
         return NoContent();
