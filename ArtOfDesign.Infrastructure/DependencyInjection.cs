@@ -8,10 +8,11 @@ using ArtOfDesign.Infrastructure.Repositories.Cuisines;
 using ArtOfDesign.Application.Interfaces.Couleurs;
 using ArtOfDesign.Infrastructure.Repositories.Couleurs;
 using ArtOfDesign.Application.Interfaces.Dressings;
-using ArtOfDesign.Application.Services.Dressings;
 using ArtOfDesign.Infrastructure.Repositories.Dressings;
 using ArtOfDesign.Infrastructure.Repositories.Meubles;
 using ArtOfDesign.Application.Interfaces.Meubles;
+using ArtOfDesign.Application.Interfaces.Projets;
+using ArtOfDesign.Infrastructure.Repositories.Projets;
 
 namespace ArtOfDesign.Infrastructure;
 
@@ -39,6 +40,7 @@ public static class DependencyInjection
         services.AddScoped<ICouleurRepository, CouleurRepository>();
         services.AddScoped<IDressingRepository, DressingRepository>();
         services.AddScoped<IMeubleRepository, MeubleRepository>();
+        services.AddScoped<IProjetRepository, ProjetRepository>();
 
         return services;
     }

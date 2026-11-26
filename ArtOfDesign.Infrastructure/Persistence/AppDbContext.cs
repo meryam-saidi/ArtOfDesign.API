@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using ArtOfDesign.Domain.Entities.Catalogue;
 using ArtOfDesign.Domain.Entities.Dressings;
 using ArtOfDesign.Domain.Entities.Meubles;
+using ArtOfDesign.Domain.Entities.Projets;
 
 namespace ArtOfDesign.Infrastructure.Persistence;
 
@@ -41,6 +42,10 @@ public class AppDbContext : DbContext
     public DbSet<MeubleCouleur> MeubleCouleurs => Set<MeubleCouleur>();
 
 
+    public DbSet<Projet> Projets => Set<Projet>();
+    public DbSet<ImageProjet> ImagesProjet => Set<ImageProjet>();
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
@@ -69,5 +74,9 @@ public class AppDbContext : DbContext
             new Configurations.Meubles.CaracteristiquesTechniquesMeubleConfiguration());
         modelBuilder.ApplyConfiguration(
             new Configurations.Meubles.MeubleCouleurConfiguration());
+
+
+        modelBuilder.ApplyConfiguration(new Configurations.Projets.ProjetConfiguration());
+
     }
 }

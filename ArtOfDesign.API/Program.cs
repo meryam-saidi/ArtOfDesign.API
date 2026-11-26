@@ -9,6 +9,8 @@ using ArtOfDesign.Application.Interfaces.Dressings;
 using ArtOfDesign.Application.Services.Dressings;
 using ArtOfDesign.Application.Services.Meubles;
 using ArtOfDesign.Application.Interfaces.Meubles;
+using ArtOfDesign.Application.Interfaces.Projets;
+using ArtOfDesign.Application.Services.Projets;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +34,8 @@ builder.Services.AddScoped<ICouleurService, CouleurService>();
 builder.Services.AddScoped<IDressingService, DressingService>();
 
 builder.Services.AddScoped<IMeubleService, MeubleService>();
+
+builder.Services.AddScoped<IProjetService, ProjetService>();
 
 builder.Services.AddCors(options =>
 {
