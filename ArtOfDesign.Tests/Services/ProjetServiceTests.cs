@@ -215,3 +215,33 @@ public class ProjetServiceTests
         await _storage.DidNotReceive().DeleteImageAsync(Arg.Any<string>());
     }
 }
+
+/*
+SlugHelperTests.cs (simple, sans mock) vérifie :
+
+les accents, les espaces, les caractères spéciaux et la longueur maximale ;
+qu'un nom en arabe donne un slug vide ;
+le suffixe -3 quand -2 est déjà pris, et le repli sur projet.
+
+ProjetServiceTests.cs (avec NSubstitute) vérifie UpdateAsync et DeleteAsync :
+
+un projet inexistant renvoie null ou false ;
+une image retirée de la liste est supprimée en base et sur Cloudinary ;
+un Id inconnu, ou une nouvelle image sans fichier, lève une ArgumentException ;
+si la base plante, le nouveau fichier est nettoyé et l'ancien n'est pas touché ;
+il ne reste qu'une seule image principale ;
+la suppression se fait en base avant Cloudinary.
+
+Pour lire ProjetServiceTests.cs, quatre expressions NSubstitute suffisent :
+
+Substitute.For<IProjetRepository>() crée un faux repository.
+.Returns(projet) dit au faux objet : « quand on t'appelle, renvoie ce projet ».
+.Received(1) vérifie que la méthode a bien été appelée une fois, et .DidNotReceive() qu'elle ne l'a jamais été.
+.ThrowsAsync(...) simule une panne.
+
+À adapter avant de lancer :
+
+Dans le constructeur de ProjetServiceTests, remplace ImageUploadResult par le vrai type renvoyé par ton UploadImageAsync.
+Ajoute les using des namespaces de tes entités, DTOs et interfaces.
+Si les signatures de ton repository ou de ton service diffèrent un peu, par exemple avec un CancellationToken, ajuste les appels dans les mocks.
+ */

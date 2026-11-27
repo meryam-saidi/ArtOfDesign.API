@@ -1,6 +1,6 @@
 ﻿
 using ArtOfDesign.Application.Interfaces;
-using ArtOfDesign.Infrastructure.Storage;
+using ArtOfDesign.Infrastructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ArtOfDesign.Application.Interfaces.Cuisines;

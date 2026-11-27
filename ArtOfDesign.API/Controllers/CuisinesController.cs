@@ -5,6 +5,7 @@ using ArtOfDesign.Application.DTOs.Cuisines.Create;
 using ArtOfDesign.Application.DTOs.Cuisines.Patch;
 using ArtOfDesign.Application.DTOs.Cuisines.Update;
 using ArtOfDesign.Application.Interfaces.Cuisines;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
@@ -21,6 +22,7 @@ public class CuisinesController : ControllerBase
         _cuisineService = cuisineService;
     }
 
+    [AllowAnonymous]
     [HttpGet]
     public async Task<ActionResult<List<CuisineDto>>> GetAll()
     {
@@ -28,6 +30,7 @@ public class CuisinesController : ControllerBase
         return Ok(cuisines);
     }
 
+    [AllowAnonymous]
     [HttpGet("{id}")]
     public async Task<ActionResult<CuisineDto>> GetById(string id)
     {

@@ -3,28 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.infrastructure\\storage\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{114A1FB0-2BF4-4865-AC53-B0E6E5A30C3D}|ArtOfDesign.Infrastructure\\ArtOfDesign.Infrastructure.csproj|solutionrelative:artofdesign.infrastructure\\storage\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|solutionrelative:artofdesign.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F0BC484-D564-4E1D-8A91-316BA39C1A88}|ArtOfDesign.Tests\\ArtOfDesign.Tests.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.tests\\services\\projetservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0BC484-D564-4E1D-8A91-316BA39C1A88}|ArtOfDesign.Tests\\ArtOfDesign.Tests.csproj|solutionrelative:artofdesign.tests\\services\\projetservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|solutionrelative:artofdesign.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F0BC484-D564-4E1D-8A91-316BA39C1A88}|ArtOfDesign.Tests\\ArtOfDesign.Tests.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.tests\\helpers\\slughelpertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F0BC484-D564-4E1D-8A91-316BA39C1A88}|ArtOfDesign.Tests\\ArtOfDesign.Tests.csproj|solutionrelative:artofdesign.tests\\helpers\\slughelpertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.api\\controllers\\projetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|solutionrelative:artofdesign.api\\controllers\\projetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.api\\extensions\\projets\\projetforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|solutionrelative:artofdesign.api\\extensions\\projets\\projetforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|c:\\users\\mariem\\documents\\0 asma\\artofdesign.backend\\artofdesign.api\\extensions\\meubles\\updatemeubleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37395183-C81C-453B-B74B-B99A45D52AB8}|ArtOfDesign.API\\ArtOfDesign.API.csproj|solutionrelative:artofdesign.api\\extensions\\meubles\\updatemeubleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mariem\\AppData\\Roaming\\Microsoft\\UserSecrets\\7097ef8a-5484-4dda-b2f4-09f1d5c42298\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 496,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,41 +29,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CloudinaryService.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Storage\\CloudinaryService.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Infrastructure\\Storage\\CloudinaryService.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Infrastructure\\Storage\\CloudinaryService.cs",
-              "RelativeToolTip": "ArtOfDesign.Infrastructure\\Storage\\CloudinaryService.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA1wA0AAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-27T08:56:38.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SlugHelperTests.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Tests\\Helpers\\SlugHelperTests.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Tests\\Helpers\\SlugHelperTests.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Tests\\Helpers\\SlugHelperTests.cs",
-              "RelativeToolTip": "ArtOfDesign.Tests\\Helpers\\SlugHelperTests.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAwwDQAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-27T08:49:49.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProjetServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Tests\\Services\\ProjetServiceTests.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.Tests\\Services\\ProjetServiceTests.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.Tests\\Services\\ProjetServiceTests.cs",
-              "RelativeToolTip": "ArtOfDesign.Tests\\Services\\ProjetServiceTests.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAIwB4AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-27T08:46:51.314Z",
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\Mariem\\AppData\\Roaming\\Microsoft\\UserSecrets\\7097ef8a-5484-4dda-b2f4-09f1d5c42298\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\7097ef8a-5484-4dda-b2f4-09f1d5c42298\\secrets.json",
+              "ToolTip": "C:\\Users\\Mariem\\AppData\\Roaming\\Microsoft\\UserSecrets\\7097ef8a-5484-4dda-b2f4-09f1d5c42298\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\7097ef8a-5484-4dda-b2f4-09f1d5c42298\\secrets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-27T11:58:14.45Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -93,41 +55,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateMeubleForm.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Extensions\\Meubles\\UpdateMeubleForm.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.API\\Extensions\\Meubles\\UpdateMeubleForm.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Extensions\\Meubles\\UpdateMeubleForm.cs",
-              "RelativeToolTip": "ArtOfDesign.API\\Extensions\\Meubles\\UpdateMeubleForm.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA4wBkAAAAZAAAA",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ArtOfDesign.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ArtOfDesign.API\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABMAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-26T17:41:40.398Z",
+              "WhenOpened": "2026-11-27T12:11:59.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProjetForms.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Extensions\\Projets\\ProjetForms.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.API\\Extensions\\Projets\\ProjetForms.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Extensions\\Projets\\ProjetForms.cs",
-              "RelativeToolTip": "ArtOfDesign.API\\Extensions\\Projets\\ProjetForms.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA3wCMAAAABAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Program.cs",
+              "RelativeDocumentMoniker": "ArtOfDesign.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Program.cs",
+              "RelativeToolTip": "ArtOfDesign.API\\Program.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAkwJ8AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-26T17:41:32.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProjetsController.cs",
-              "DocumentMoniker": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Controllers\\ProjetsController.cs",
-              "RelativeDocumentMoniker": "ArtOfDesign.API\\Controllers\\ProjetsController.cs",
-              "ToolTip": "C:\\Users\\Mariem\\Documents\\0 asma\\ArtOfDesign.Backend\\ArtOfDesign.API\\Controllers\\ProjetsController.cs",
-              "RelativeToolTip": "ArtOfDesign.API\\Controllers\\ProjetsController.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAYwIMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-26T17:39:39.584Z",
+              "WhenOpened": "2026-11-27T12:10:11.046Z",
               "EditorCaption": ""
             }
           ]

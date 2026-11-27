@@ -3,6 +3,7 @@ using ArtOfDesign.Application.DTOs.Meubles;
 using ArtOfDesign.Application.DTOs.Meubles.Create;
 using ArtOfDesign.Application.DTOs.Meubles.Update;
 using ArtOfDesign.Application.Interfaces.Meubles;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArtOfDesign.API.Controllers;
@@ -18,6 +19,7 @@ public class MeublesController : ControllerBase
         _meubleService = MeubleService;
     }
 
+    [AllowAnonymous]
     [HttpGet]
     public async Task<ActionResult<List<MeubleDto>>> GetAll()
     {
@@ -25,6 +27,7 @@ public class MeublesController : ControllerBase
         return Ok(Meubles);
     }
 
+    [AllowAnonymous]
     [HttpGet("{id}")]
     public async Task<ActionResult<MeubleDto>> GetById(string id)
     {

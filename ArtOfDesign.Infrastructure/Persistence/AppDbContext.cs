@@ -6,6 +6,7 @@ using ArtOfDesign.Domain.Entities.Catalogue;
 using ArtOfDesign.Domain.Entities.Dressings;
 using ArtOfDesign.Domain.Entities.Meubles;
 using ArtOfDesign.Domain.Entities.Projets;
+using ArtOfDesign.Domain.Entities.Authentification;
 
 namespace ArtOfDesign.Infrastructure.Persistence;
 
@@ -46,6 +47,8 @@ public class AppDbContext : DbContext
     public DbSet<ImageProjet> ImagesProjet => Set<ImageProjet>();
 
 
+    public DbSet<Admin> Admins => Set<Admin>();
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
@@ -78,5 +81,7 @@ public class AppDbContext : DbContext
 
         modelBuilder.ApplyConfiguration(new Configurations.Projets.ProjetConfiguration());
 
+
+        modelBuilder.ApplyConfiguration(new Configurations.Authentification.AdminConfiguration());
     }
 }

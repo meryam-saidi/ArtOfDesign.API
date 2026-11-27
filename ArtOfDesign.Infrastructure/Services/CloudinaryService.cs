@@ -5,7 +5,7 @@ using ArtOfDesign.Application.DTOs.Images;
 using AppImageUploadResult =
     ArtOfDesign.Application.DTOs.Images.ImageUploadResult;
 
-namespace ArtOfDesign.Infrastructure.Storage;
+namespace ArtOfDesign.Infrastructure.Services;
 
 public class CloudinaryService : IImageStorageService
 {

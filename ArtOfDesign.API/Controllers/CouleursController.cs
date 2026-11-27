@@ -2,6 +2,7 @@
 using ArtOfDesign.Application.DTOs.Couleurs;
 using ArtOfDesign.Application.Interfaces.Couleurs;
 using ArtOfDesign.Application.Services.Couleurs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArtOfDesign.API.Controllers;
@@ -17,6 +18,7 @@ public class CouleursController : ControllerBase
         _service = service;
     }
 
+    [AllowAnonymous]
     [HttpGet]
     public async Task<ActionResult<List<CouleurDto>>> GetAll()
     {
@@ -24,6 +26,7 @@ public class CouleursController : ControllerBase
         return Ok(couleurs);
     }
 
+    [AllowAnonymous]
     [HttpGet("{id:int}")]
     public async Task<ActionResult<CouleurDto>> GetById(int id)
     {

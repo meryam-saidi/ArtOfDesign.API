@@ -4,6 +4,7 @@ using ArtOfDesign.Application.DTOs.Projets.Update;
 using ArtOfDesign.Application.DTOs.Projets;
 using ArtOfDesign.Application.Interfaces.Projets;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ArtOfDesign.API.Controllers;
 
@@ -21,10 +22,12 @@ public class ProjetsController : ControllerBase
         _projetService = projetService;
     }
 
+    [AllowAnonymous]
     [HttpGet]
     public async Task<ActionResult<List<ProjetDto>>> GetAll()
         => Ok(await _projetService.GetAllAsync());
 
+    [AllowAnonymous]
     [HttpGet("{id}")]
     public async Task<ActionResult<ProjetDto>> GetById(string id)
     {

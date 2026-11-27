@@ -5,6 +5,7 @@ using ArtOfDesign.Application.DTOs.Dressings.Create;
 using ArtOfDesign.Application.DTOs.Dressings.Update;
 using ArtOfDesign.Application.Interfaces.Dressings;
 using ArtOfDesign.Application.Services.Dressings;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArtOfDesign.API.Controllers;
@@ -20,6 +21,7 @@ public class DressingsController : ControllerBase
         _dressingService = DressingService;
     }
 
+    [AllowAnonymous]
     [HttpGet]
     public async Task<ActionResult<List<DressingDto>>> GetAll()
     {
@@ -27,6 +29,7 @@ public class DressingsController : ControllerBase
         return Ok(Dressings);
     }
 
+    [AllowAnonymous]
     [HttpGet("{id}")]
     public async Task<ActionResult<DressingDto>> GetById(string id)
     {
